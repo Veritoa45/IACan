@@ -14,11 +14,11 @@ body{
 
 header {
     background-color: rgb(254, 210, 210);
-    height: 160px;
+    height: 130px;
 }
 
 .contenedor {
-    height: 120px;
+    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center; 
@@ -61,7 +61,7 @@ nav li {
 }
 
 nav li a {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 nav ul a {
@@ -70,13 +70,13 @@ nav ul a {
     color:#000;
     margin-left: 110px;
     margin-right: 110px;
-    padding: 0.6em 1em;
+    padding: 5px;
 }
 
 nav ul a:hover {
     background-color:rgb(255, 156, 156) ;
     color: #000;
-    padding: 0.6em 1em;
+    padding: 5px;
 }
 
 main { 
@@ -86,6 +86,107 @@ main {
 
 h2 {
     text-align: center;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    width: 850px;
+    float: left;
+    padding: 10px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.info h3 {
+    text-align: center;
+}
+
+.aside{
+    width: 430px;
+    float: right;
+    background-color: rgb(254, 210, 210);
+}
+
+h4 {
+    text-align: center;
+    padding: 10px;
+}
+
+iframe {
+    margin: 10px auto;
+
+}
+
+.eventos {
+    text-align: justify;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    margin:auto;
+    background-color: rgb(254, 176, 176);
+    width: 1100px;
+    padding: 30px;
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container ul.slider {
+    position: relative;
+    width: 33.3%;
+    height: 200px;
+}
+
+.container li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider li{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: rgb(254, 176, 176);
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(255, 156, 156);
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 100%;
 }
 
 footer {
@@ -119,15 +220,15 @@ footer {
 }
 
 .redes {
-    width: 200px;
+    width: 300px;
     margin-right: 110px;
+    text-align: center;
 }
 
 .redes img {
     width: 25px;
-    margin-top: 20px;
-    margin-right: 20px;
-    float: right;
+    margin-bottom: 20px;
+    margin-left: 25px;
 }
 
 /* Inscribite */
