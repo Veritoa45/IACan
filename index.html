@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"">
     <title>IACan</title>
     <link rel="shortcut icon" href="img/ico/IACan-Favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
   </head>
   <body>
     <header>
@@ -107,102 +110,131 @@
         </div>
         <div class="aside">
           <h4>Calendario de Eventos</h4>
-          <iframe src="https://calendar.google.com/calendar/embed?height=299&wkst=1&bgcolor=%23E67C73&ctz=America%2FArgentina%2FBuenos_Aires&showTitle=0&showPrint=0&showTabs=0&showTz=0&showCalendars=0&src=NWUyODk5MTg5NDNkMjVhNzdjMzYxMTgxMzAzMzRlMDExNDU2MDM2ODI1NWQyNjkxYmQ0NzE1MzI3MTgxY2EwZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457" style="border:solid 1px #777" width="430" height="299" frameborder="0" scrolling="no"></iframe>
-          <ul class="eventos">
-            <li>
-              <p>
-                <b>14/10</b> - Encuentro Sudamericano de Adiestradores Caninos - Complejo Costa Salguero: Hace crecer tu red 
-                de contactos, charlas, sorteos y talleres temáticos.
-              </p>  
-            </li>
-            <li>
-              <p>
-                <b>19/10</b> - Seminario especial “Alimentación sana para una mente fuerte” - Instituto IACan: A cargo del 
-                Dr. Adrián Ladrimovich, especialista en nutrición animal, best seller del libro “No te comas la tarea”.
-              </p>  
-            </li>
-            <li>
-              <p>
-                <b>8/11</b> - Charla “Paren el fuego”: Concientización de los peligros de la pirotecnia y cómo atender 
-                emergencias causadas por ella. Dictada por la Asociación Argentina de Protección Animal de Córdoba.
-              </p>  
-            </li>
-            <li>
-              <p>
-                <b>25/11</b> - Charla “Ellos también sienten”: Tips para irse tranquilos y sin culpas de vacaciones. A cargo 
-                de nuestro director Kike Arroyo.
-              </p>  
-            </li>
-          </ul>
+          <div class="calendario">
+            <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23B39DDB&ctz=America%2FArgentina%2FBuenos_Aires&showTitle=0&showPrint=0&showCalendars=0&showTz=0&showTabs=0&src=NWUyODk5MTg5NDNkMjVhNzdjMzYxMTgxMzAzMzRlMDExNDU2MDM2ODI1NWQyNjkxYmQ0NzE1MzI3MTgxY2EwZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB" style="border:solid 1px #777" width="430" height="300" frameborder="0" scrolling="no"></iframe>
+            <ul class="eventos">
+              <li>
+                <p>
+                  <b>14/10</b> - Encuentro Sudamericano de Adiestradores Caninos - Complejo Costa Salguero: Hace crecer tu red 
+                  de contactos, charlas, sorteos y talleres temáticos.
+                </p>  
+              </li>
+              <li>
+                <p>
+                  <b>19/10</b> - Seminario especial “Alimentación sana para una mente fuerte” - Instituto IACan: A cargo del 
+                  Dr. Adrián Ladrimovich, especialista en nutrición animal, best seller del libro “No te comas la tarea”.
+                </p>  
+              </li>
+              <li>
+                <p>
+                  <b>8/11</b> - Charla “Paren el fuego”: Concientización de los peligros de la pirotecnia y cómo atender 
+                  emergencias causadas por ella. Dictada por la Asociación Argentina de Protección Animal de Córdoba.
+                </p>  
+              </li>
+              <li>
+                <p>
+                  <b>25/11</b> - Charla “Ellos también sienten”: Tips para irse tranquilos y sin culpas de vacaciones. A cargo 
+                  de nuestro director Kike Arroyo.
+                </p>  
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="container">  
-        <ul class="slider">
-          <li id="slide1">
-            <h3>Jorgelina Doberminsky</h3>
+      <h3>Opiniones de nuestros alumnos</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h4>Jorgelina Doberminsky</h4>
             <p>
               Estoy muy agradecida con IACan por todo lo aprendido. Se nota su calidez y amor por los perros en cada una de sus clases.
             </p>
-            
-          </li>
-          <li id="slide2">
-            <h3>Germán Ovejeiro</h3>
+          </div>
+          <div class="swiper-slide">
+            <h4>Germán Ovejeiro</h4>
             <p>
               Es el segundo curso que hago en este lugar, todos los instructores son excelentes y estan en todos los detalles. 
               Los recomiendo.
             </p>
-          </li>
-          <li id="slide3">  
-            <h3>Ana Maria Maltes</h3>
+          </div>
+          <div class="swiper-slide">
+            <h4>Ana Maria Maltes</h4>
             <p>
               Tengo 20 años en esta profesión pero quise formalizar mis estudios para darle más valor a mi marca personal. 
               Definitivamente hice la mejor elección viniendo a IACan
             </p>
-          </li>
-          <li id="slide4">
-            <h3>Pastor Belgman</h3>
+          </div>
+          <div class="swiper-slide">
+            <h4>Pastor Belgman</h4>
             <p>
               IACan me ha permitido poder responder a las exigencias actuales de mis clientes y poder brindarles lo mejor a nuestros 
               mejores amigos cuadrúpedos.
             </p>
-          </li>
-          <li id="slide5">
-            <h3>Laura Beagle</h3>
+          </div>
+          <div class="swiper-slide">
+            <h4>Laura Beagle</h4>
             <p>
               Formar un can como acompañante es una gran responsabilidad. El instituto no solo me ha permitido dedicarme a esta 
               hermosa profesión de manera responsable, sino que tambien crea el sentimiento de compromiso con su compañero humano 
               en cada uno de los perros con los que se trabaja. Gracias IACan!
             </p>
-          </li>
-        </ul>    
-        <ul class="menu">
-          <li><a href="#slide1">1</a></li>
-          <li><a href="#slide2">2</a></li>
-          <li><a href="#slide3">3</a></li>
-          <li><a href="#slide4">4</a></li>
-          <li><a href="#slide5">5</a></li>
-        </ul>
-      </div>  
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="mapa">
+        <h3>Donde estamos</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.066946732176!2d-58.3855831!3d-34.6024686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac663e1c671%3A0x56cd23d36848e42f!2sLavalle%201334%2C%20C1055%20CABA!5e0!3m2!1ses!2sar!4v1696792927152!5m2!1ses!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+      </div>
     </main>
     <footer>
       <div class="datos">
-        <p>dirección</p>
-        <p>barrio</p>
-        <p>mapa google</p>
+        <h3>Contactanos</h3>
+        <p>Lavalle 1334 - CABA</p>
+        <p><i>consultas@iacan.com</i></p>
       </div>
       <div class="links">
-        <a href="../adiestramiento_canino.pdf" download>Plan de Estudios</a>
-        <a href="adiestradores.html">Adiestradores</a>
-        <a href="contacto.html" target="_blank">Contacto</a>
+        <a href="archivos/adiestramiento_canino.pdf" download>Plan de Estudios</a>
+        <a href="pages/adiestradores.html">Adiestradores</a>
+        <a href="pages/contacto.html" target="_blank">Contacto</a>
       </div>
-      <div class="redes">
-        <h5>Nuestras Redes Sociales</h5>
-        <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
-        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-        <a href="#"><img src="img/instagram.png" alt="instagram"></a>
-        <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+      <div class="red">
+        <h4>Nuestras Redes Sociales</h4>
+        <div>
+          <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
+          <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+          <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+          <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+        </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
   </body>
 </html>

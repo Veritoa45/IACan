@@ -1,117 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Registro Alumnos</title>
-        <link rel="shortcut icon" href="../img/ico/IACan-Favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="../css/style.css" />
-    </head>
-    <body>
-        <header>
-            <div class="contenedor">
-                <img src="../img/IACan Logo.png" alt="Logo" class="logo-style" />
-                <h1>Instituto de Adiestramiento Canino</h1>
-                <a href="ingresar"><img src="../img/inicio.png" alt="inicio" id="inicio"/></a>
-            </div>
-            <nav>
-                <ul>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_form.css">
+    <title>Formulario de registro de alumno</title>
+  </head>
+  <body>
+    <header>
+        <div class="contenedor">
+            <img src="../img/IACan Logo.png" alt="Logo" class="logo-style" />
+            <h1>Instituto de Adiestramiento Canino</h1>
+            <a href="ingresar"><img src="../img/inicio.png" alt="inicio" id="inicio"/></a>
+        </div>
+        <nav>
+            <ul>
                 <li><a href="../index.html" target="_self">Inicio</a></li>
-                <li><a href="#">Inscribite</a></li>
-                <li><a href="adiestradores.html" target="_self">Adiestradores</a></li>
-                <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <form>
+                <li><a href="inscripciones.html" target="_self">Inscribite</a></li>
+                <li><a href="adiestradores.html">Adiestradores</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="alumnos_adiest">
             <h2>Formulario de registro de alumno</h2>
-            <fieldset>
-                <legend>Datos personales</legend>
-            <div class="dato">
-                <label for="nombre_u">Nombre:</label>
-                <input size="20" type="text" id="nombre_u" name="nombre_u" placeholder="Ingrese su nombre aquí" required/>
-            </div> 
-            <br>
-            <div class="dato">
-                <label for="apellido_u">Apellido:</label>
-                <input size="20" type="text" id="apellido_u" name="apellido_u" placeholder="Ingrese su apellido aquí" required/>
-            </div> 
-            <br>
-            <div class="dato">
-                <label for="birthday_u">Fecha de Nacimiento</label>
-                <input type="date" name="birthday_u" required>
-            </div> 
-            <br>
-            <div class="dato">Género:
-                <input type="radio" name="genero_u" value="Masculino" required> Masculino
-                <input type="radio" name="genero_u" value="Femenino"> Femenino
-                <input type="radio" name="genero_u" value="Otro"> Otro
-            </div> 
-            <br>
-            <div class="dato">
-                <label for="direccion_u">Dirección:</label>
-                <input type="text" id="direccion_u" name="direccion_u" placeholder="Ingrese su direccion aquí" required/>
-            </div>  
-            <br>
-            <div class="dato">
-                <label for="ciudad_u">Ciudad:</label>
-                <input type="text" id="ciudad_u" name="ciudad_u" placeholder="Ingrese su ciudad aquí" required/>
-            </div>  
-            <br>
-            <div class="dato">
-                <label for="zipcode_u">Codigo Postal:</label>
-                <input size="30" type="text" id="zipcode_u" name="zipcode_u" placeholder="Ingrese su código postal aquí" required/>
-            </div>  
-            <br>
-            <div class="dato">
-                <label for="mail_u">Correo electrónico:</label>
-                <input size="50" type="email" id="mail_u" name="mail_u" placeholder="Ingrese su correo electrónico aquí 'ejemplo@mail.com'" required/>
-            </div>     
-            <br>
-            <div class="dato">
-                <label for="telefono_u">Teléfono:</label>
-                <input type="tel" id="telefono_u" name="telefono_u" placeholder="Ingrese su telefono aquí" required/>
-            </div> 
-            </fieldset>
-            <fieldset>
-                <legend>Cree su cuenta</legend>
-            <div class="dato">
-                <label for="usuario_u">Usuario:</label>
-                <input size="30" type="text" id="usuario_u" name="usuario_u" placeholder="Ingrese un usuario" required/>
-            <br>
-            <br>
-                <label for="contraseña_u">Contraseña:</label>
-                <input size="30" type="password" id="contraseña_u" name="contraseña_u" placeholder="Ingrese una contraseña aquí" required/>
-            <br>
-            <br>
-                <label for="contraseña2_u">Repita su contraseña:</label>
-                <input size="30" type="password" id="contraseña2_u" name="contraseña2_u" placeholder="Confirme su contraseña aquí" required/>
-            <br>
-            </div> 
-            <br>
-            <div class="enviar">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
-            </div>
-        </form>
-        <footer>
-            <div class="datos">
-              <p>dirección</p>
-              <p>barrio</p>
-              <p>mapa google</p>
-            </div>
-            <div class="links">
-              <a href="../adiestramiento_canino.pdf" download>Plan de Estudios</a>
-              <a href="adiestradores.html">Adiestradores</a>
-              <a href="contacto.html" target="_blank">Contacto</a>
-            </div>
-            <div class="redes">
-              <h4>Nuestras Redes Sociales</h4>
-              <a href="#"><img src="../img/whatsapp.png" alt="whatsapp"></a>
-              <a href="#"><img src="../img/facebook.png" alt="facebook"></a>
-              <a href="#"><img src="../img/instagram.png" alt="instagram"></a>
-              <a href="#"><img src="../img/twitter.png" alt="twitter"></a>
-            </div>
-          </footer>
-    </body>
+            <fieldset class="recuadro">
+            <legend>Datos personales</legend>
+            <div class="dato_u">
+        <label for="nombre_u">Nombre:</label>
+        <input size="20" type="text" id="nombre_u" name="nombre_u" placeholder="Ingrese su nombre aquí" required/>
+    </div> 
+    <br>
+    <div class="dato_u">
+        <label for="apellido_u">Apellido:</label>
+        <input size="20" type="text" id="apellido_u" name="apellido_u" placeholder="Ingrese su apellido aquí" required/>
+    </div> 
+    <br>
+    <div class="dato_u">
+        <label for="birthday_u">Fecha de Nacimiento</label>
+        <input type="date" name="birthday_u" required>
+    </div> 
+    <br>
+    <div class="dato_u">
+        <label for="genero_u">Genero:</label>
+        <input type="radio" name="genero_u" id="genero_u" value="Masculino" required> Masculino
+        <input type="radio" name="genero_u" id="genero_u" value="Femenino"> Femenino
+        <input type="radio" name="genero_u" id="genero_u" value="Otro"> Otro
+    </div> 
+    <br>
+    <div class="dato_u">
+        <label for="direccion_u">Dirección:</label>
+        <input type="text" id="direccion_u" name="direccion_u" placeholder="Ingrese su direccion aquí" required/>
+    </div>  
+    <br>
+
+    <div class="dato_u">
+        <label for="ciudad_u">Ciudad:</label>
+        <input type="text" id="ciudad_u" name="ciudad_u" placeholder="Ingrese su ciudad aquí" required/>
+    </div>  
+    <br>
+
+    <div class="dato_u">
+        <label for="zipcode_u">Codigo Postal:</label>
+        <input size="30" type="text" id="zipcode_u" name="zipcode_u" placeholder="Ingrese su código postal aquí" required/>
+    </div>  
+    <br>
+    <div class="dato_u">
+        <label for="mail_u">Correo electrónico:</label>
+        <input size="50" type="email" id="mail_u" name="mail_u" placeholder="Ingrese su correo electrónico aquí 'ejemplo@mail.com'" required/>
+    </div>     
+    <br>
+    <div class="dato_u">
+        <label for="telefono_u">Teléfono:</label>
+        <input type="tel" id="telefono_u" name="telefono_u" placeholder="Ingrese su telefono aquí" required/>
+    </div> 
+</fieldset>
+
+<fieldset class="recuadro">
+    <legend>Cree su cuenta</legend>
+    <div class="dato_u">
+        <label for="usuario_u">Usuario:</label>
+        <input size="30" type="text" id="usuario_u" name="usuario_u" placeholder="Ingrese un usuario" required/>
+<br>
+<br>
+        <label for="contraseña_u">Contraseña:</label>
+        <input size="30" type="password" id="contraseña_u" name="contraseña_u" placeholder="Ingrese una contraseña aquí" required/>
+<br>
+<br>
+        <label for="contraseña2_u">Repita su contraseña:</label>
+        <input size="30" type="password" id="contraseña2_u" name="contraseña2_u" placeholder="Confirme su contraseña aquí" required/>
+<br>
+
+    </div> 
+</fieldset>
+
+<br>
+<div class="enviar">
+    <input type="submit" value="Enviar" class="button">
+    <input type="reset" value="Limpiar" class="button">
+</div>
+    </form>
+</main>
+<footer>
+    <div class="datos">
+        <h3>Contactanos</h3>
+        <p>Lavalle 1334 - CABA</p>
+        <p><i>consultas@iacan.com</i></p>
+    </div>
+    <div class="links">
+      <a href="../adiestramiento_canino.pdf" download>Plan de Estudios</a>
+      <a href="adiestradores.html">Adiestradores</a>
+      <a href="contacto.html" target="_blank">Contacto</a>
+    </div>
+    <div class="red">
+      <h4>Nuestras Redes Sociales</h4>
+      <a href="#"><img src="../img/whatsapp.png" alt="whatsapp"></a>
+      <a href="#"><img src="../img/facebook.png" alt="facebook"></a>
+      <a href="#"><img src="../img/instagram.png" alt="instagram"></a>
+      <a href="#"><img src="../img/twitter.png" alt="twitter"></a>
+    </div>
+  </footer>
+  </body>
 </html>
