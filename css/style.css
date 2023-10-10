@@ -37,11 +37,13 @@ h1 {
     height: 30px;
     float: right;
     margin-top: 20px;
+    padding: 5px;
 }
 
 #inicio:hover{
     background-color: rgb(254, 176, 176);
-    border-radius: 20px;
+    border-radius: 15px;
+   
 }
 
 nav ul {
@@ -339,6 +341,7 @@ footer {
 }
 
 .biselado {
+    padding: 20px;
 	border: 2px solid rgb(254, 176, 176);
 	background: rgb(254, 210, 210);
 	border-radius: 6px;  
@@ -346,9 +349,15 @@ footer {
 	text-shadow: 1px 1px 1px rgba(255,255,255,.9);
 }
 
-.biselado h3, .lista {
-    margin-left: 20px;
+.biselado .encabezado {
+    height: 90px;
+}
+.biselado h3 {
     text-align: left;
+}
+
+.biselado p{
+    margin-bottom: 0;
 }
 
 .orden {
@@ -357,11 +366,60 @@ footer {
     grid-template-rows: 50px 50px;    
 }
 
-.barrios {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.orden .barrios {
+    display: inline-flex;
+}
+
+.orden .barrios p {
+    margin-right: 10px;
+}
+
+.orden .puntaje {
+    display: inline-flex;
+    align-items: end;
+    margin-bottom: 15px;
+}
+
+.orden .puntaje img {
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.btn-abrir-modal1, .btn-abrir-modal2, .btn-abrir-modal3, .btn-abrir-modal4, .btn-abrir-modal5, .btn-abrir-modal6, .btn-abrir-modal7, .btn-abrir-modal8, .btn-abrir-modal9, .btn-abrir-modal10, .btn-abrir-modal11, .btn-abrir-modal12, .btn-abrir-modal13, .btn-abrir-modal14,.btn-abrir-modal15,.btn-abrir-modal16,.btn-abrir-modal17,.btn-abrir-modal18,.btn-abrir-modal19,.btn-abrir-modal20,.btn-abrir-modal21,.btn-abrir-modal22,.btn-abrir-modal23,.btn-abrir-modal24,.btn-abrir-modal25,.btn-abrir-modal26,.btn-abrir-modal27,.btn-abrir-modal28,.btn-abrir-modal29,.btn-abrir-modal30 {
+    width: 150px;
+    height: 30px;
+    margin: 10px 75px;
+    font-weight: bold;
+    background-color: rgb(215, 189, 226);
+    border: 3px solid;
+    border-color: rgb(125, 60, 152);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal1 , .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8, .modal9, .modal10, .modal11, .modal12, .modal13, .modal14, .modal15, .modal16, .modal17, .modal18, .modal19, .modal20, .modal21, .modal22, .modal23, .modal24, .modal25, .modal26, .modal27, .modal28, .modal29, .modal30 {
+    background-color: rgb(254, 210, 210);
+    border: 3px solid;
+    border-color: rgb(94, 13, 6);
+    border-radius: 10px;
+}
+
+.huellas {
+    list-style-image: url("../img/huella.png");
+    padding: 5px;
+}
+
+.btn-cerrar-modal1,.btn-cerrar-modal2,.btn-cerrar-modal3,.btn-cerrar-modal4,.btn-cerrar-modal5,.btn-cerrar-modal6,.btn-cerrar-modal7,.btn-cerrar-modal8,.btn-cerrar-modal9,.btn-cerrar-modal10,.btn-cerrar-modal11,.btn-cerrar-modal12,.btn-cerrar-modal13,.btn-cerrar-modal14,.btn-cerrar-modal15,.btn-cerrar-modal16,.btn-cerrar-modal17,.btn-cerrar-modal18,.btn-cerrar-modal19,.btn-cerrar-modal20,.btn-cerrar-modal21,.btn-cerrar-modal22,.btn-cerrar-modal23,.btn-cerrar-modal24,.btn-cerrar-modal25,.btn-cerrar-modal26,.btn-cerrar-modal27,.btn-cerrar-modal28,.btn-cerrar-modal29,.btn-cerrar-modal30 {
+    width: 150px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    background-color: rgb(215, 189, 226);
+    border: 3px solid;
+    border-color: rgb(125, 60, 152);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .registro {
@@ -401,18 +459,19 @@ footer {
 
 /*Contacto*/
 
-form{
+#contact {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 30px;
     text-align: center;
 }
 
 .linea {
     display: flex;
+    padding: 10px;
 }
 
 label {
@@ -434,16 +493,17 @@ textarea {
 .button {
     width: 100px;
     height: 50px;
-    background-color: rgb(2, 50, 96);
-    color: rgb(144, 254, 251);
+    background-color: rgb(125, 60, 152);
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
     border-radius: 5px;
 }
 
 .button:hover {
-    background-color: rgb(251, 74, 227);
+    background-color: rgb(254, 176, 176);
     color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 /*Formulario de alumnos*/
@@ -451,18 +511,18 @@ textarea {
 .recuadro{
    border-style: solid;
    border-width: medium;
-   border-color:  rgb(251, 74, 227);
+   border-color:  rgb(254, 176, 176);
 }
 legend {
-    border-color: blue;
+    border-color: #000;
     font-size: xx-large;
-    color: darkgreen;
+    color: rgb(125, 60, 152);
     text-align: center;
     font-weight: bold;
 }
 .dato_u,.dato2{
     text-align: center;
-    color:black;
+    color:#000;
     font-weight: bold;
  }
 
@@ -499,3 +559,31 @@ input#ciudad_a {
     color: rgb(38, 0, 255);
     font-weight: bold;
 }
+
+/*Log - In*/
+
+.ingresar2{
+    width: 150px;
+    height: 30px;
+    margin: 10px 75px;
+    font-weight: bold;
+    background-color: rgb(215, 189, 226);
+    border: 3px solid;
+    border-color: rgb(125, 60, 152);
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.grid-container2 {
+    display:grid;
+    grid-template-columns: 400px 400px ;
+    column-gap: 100px;
+    width: 800px;
+    margin-left: 200px;
+    margin-bottom: 150px;
+}
+
+.grid-item2,.cuadricula{
+height: 200px;
+}
+
