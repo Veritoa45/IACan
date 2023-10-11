@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inscripciones</title>
     <link rel="shortcut icon" href="../img/ico/IACan-Favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -152,46 +153,46 @@
         </div>
       </section>  
       <h2>Opiniones de nuestros alumnos</h2>
-      <button class="pre-btn"><img src="../img/prev.png" alt=""></button>
-      <button class="nxt-btn"><img src="../img/next.png" alt=""></button>
-      <div class="swiper-container">
-        <div class="swiper-slide">
-          <h3>Germán Ovejeiro</h3>
-          <p>
-            Es el segundo curso que hago en este lugar, todos los instructores son excelentes y estan en todos los detalles. 
-            Los recomiendo.
-          </p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h3>Germán Ovejeiro</h3>
+            <p>
+              Es el segundo curso que hago en este lugar, todos los instructores son excelentes y estan en todos los detalles. 
+              Los recomiendo.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Ana Maria Maltes</h3>
+            <p>
+              Tengo 20 años en esta profesión pero quise formalizar mis estudios para darle más valor a mi marca personal. 
+              Definitivamente hice la mejor elección viniendo a IACan
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Pastor Belgman</h3>
+            <p>
+              IACan me ha permitido poder responder a las exigencias actuales de mis clientes y poder brindarles lo mejor a nuestros 
+              mejores amigos cuadrúpedos.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Laura Beagle</h3>
+            <p>
+              Formar un can como acompañante es una gran responsabilidad. El instituto no solo me ha permitido dedicarme a esta 
+              hermosa profesión de manera responsable, sino que tambien crea el sentimiento de compromiso con su compañero humano 
+              en cada uno de los perros con los que se trabaja. Gracias IACan!
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <h3>Jorgelina Doberminsky</h3>
+            <p>
+              Estoy muy agradecida con IACan por todo lo aprendido. Se nota su calidez y amor por los perros en cada una de sus clases.
+            </p>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <h3>Ana Maria Maltes</h3>
-          <p>
-            Tengo 20 años en esta profesión pero quise formalizar mis estudios para darle más valor a mi marca personal. 
-            Definitivamente hice la mejor elección viniendo a IACan
-          </p>
-        </div>
-        <div class="swiper-slide">
-          <h3>Pastor Belgman</h3>
-          <p>
-            IACan me ha permitido poder responder a las exigencias actuales de mis clientes y poder brindarles lo mejor a nuestros 
-            mejores amigos cuadrúpedos.
-          </p>
-        </div>
-        <div class="swiper-slide">
-          <h3>Laura Beagle</h3>
-          <p>
-            Formar un can como acompañante es una gran responsabilidad. El instituto no solo me ha permitido dedicarme a esta 
-            hermosa profesión de manera responsable, sino que tambien crea el sentimiento de compromiso con su compañero humano 
-            en cada uno de los perros con los que se trabaja. Gracias IACan!
-          </p>
-        </div>
-        <div class="swiper-slide">
-          <h3>Jorgelina Doberminsky</h3>
-          <p>
-            Estoy muy agradecida con IACan por todo lo aprendido. Se nota su calidez y amor por los perros en cada una de sus clases.
-          </p>
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
-  
     </main>
     <footer>
       <div class="datos">
@@ -214,6 +215,16 @@
         </div>
       </div>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      });
+    </script>
   </body>
 </html>

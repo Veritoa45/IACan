@@ -337,7 +337,27 @@ h2 {
     text-align: center;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
 
+.swiper-slide {
+    text-align: center;
+    font-size: 16px;
+    width: 250px;
+    height: 250px;
+	background: rgb(254, 210, 210);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide p{
+    padding: 10px;
+}
 
 /*Adiestradores*/
 
