@@ -591,8 +591,8 @@ input#ciudad_a {
 /*Log - In*/
 
 .ingresar2{
-    width: 150px;
-    height: 30px;
+    width: 200px;
+    height: 75px;
     margin: 10px 75px;
     font-weight: bold;
     background-color: rgb(215, 189, 226);
@@ -600,18 +600,44 @@ input#ciudad_a {
     border-color: rgb(125, 60, 152);
     border-radius:10px;
     cursor: pointer;
-}
-
+    font-size: large;
+    }
+.ingresar2:hover {
+    transition: 0.5s;
+    background-color: rgb(254, 210, 210);
+    border: 3px solid;
+    border-color: rgb(94, 13, 6);
+    }
 .grid-container2 {
     display:grid;
     grid-template-columns: 400px 400px ;
-    column-gap: 100px;
-    width: 800px;
-    margin-left: 200px;
+    column-gap: 200px;
+    width: 1280px;
     margin-bottom: 150px;
-}
-
-.grid-item2,.cuadricula{
-height: 200px;
-}
-
+    height: 341px;
+    }
+.grid-item2 .biselado{
+    height: 300px;
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 10%;
+    }
+.cuadricula{
+    height: 300px;
+    }
+input#usuario_login, input#contraseña_login{
+    width: 200px;
+    }
+.registro_alumno , .registro_adiestrador{
+    text-align: center;
+    margin-top: 15px;
+    }
+.dato_login{
+    text-align: center;
+    margin-top: 20px;
+    height: 30px;
+    }
+.boton_ingreso{
+    text-align: center;
+    margin-top: 25px;
+    }
