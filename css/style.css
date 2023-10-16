@@ -227,8 +227,8 @@ footer {
 
 .links {
     display: flex;
-        flex-direction: column;
-        justify-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .links a {
@@ -396,9 +396,9 @@ h2 {
 
 #adiestradores {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 620px 620px;
-    justify-content: space-between;
+    grid-gap: 10px;
+    grid-template-columns: 600px 600px;
+    justify-content: space-around;
 }
 
 .biselado {
@@ -683,3 +683,117 @@ input#usuario_login, input#contraseña_login {
     margin-top: 25px;
 }
 
+/*----------------------------------*/
+/*Responsive Tablet*/
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    /*Index*/
+    header {
+        height: 130px;
+    }
+    
+    .contenedor {
+        height: 100px;
+    }
+    
+    .logo-style {
+        height: 70px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+        
+    #inicio {
+        height: 25px;
+        float: right;
+        margin-top: 20px;
+        padding: 5px;
+    }
+    
+    nav ul a {
+        margin: 0;
+    }
+    
+    main { 
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .info{
+        width: 50%;
+        font-size: 14px;
+    }
+    
+    .aside{
+        width: 50%;
+    }
+    
+    .calendario {
+        margin-right: 5px;
+    }
+    
+    iframe {
+        width: 90%;
+    }
+    
+    footer {
+        margin: 0px;
+        font-size: 14px;
+        height: 115px;
+    }
+    
+    .datos {
+        margin-left: 20px;
+        
+    }
+
+    .links {
+        margin-left: 20px;
+    }
+    
+    .red {
+        margin-right: 0;
+    }
+    
+    /*Adiestradores*/
+
+    #adiestradores {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: auto 5%;
+    }
+    
+    .biselado .encabezado {
+        height: 110px;
+    }
+       
+    .orden {
+        display: grid;
+        grid-template-columns: 280px 280px;
+        grid-template-rows: 60px 60px;    
+        column-gap: 20px;
+    }
+
+    .orden .barrios {
+        width: 90%;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (max-width: 640px) {
+    .menu {
+    background: blue;
+    }
+    }*/
+    
