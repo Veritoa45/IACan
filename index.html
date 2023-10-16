@@ -14,9 +14,9 @@
         <h1>Instituto de Adiestramiento Canino</h1>
         <a href="pages/form-login.html"><img src="img/inicio.png" alt="inicio" id="inicio"/></a>
       </div>
-      <nav>
+      <nav> 
         <ul>
-          <li><a href="#">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="pages/inscripciones.html" target="_self">Inscribite</a></li>
           <li><a href="pages/adiestradores.html" target="_self">Adiestradores</a></li>
           <li><a href="pages/contacto.html" target="_blank">Contacto</a></li>
@@ -131,15 +131,19 @@
               </li>
             </ul>
           </div>
-          <div class="clima">
+          <div id="clima">
             <div class="icon">
               <img src="img/clima.png" alt="clima">
-              <h3>El clima</h3>
+              <h2>El clima</h2>
             </div>
-            <div class="text">La temperatura es de:  </div>
-            <div class="temp"></div>
-            <div class="summary"></div>
-            <div class="location"></div>
+            <div id="caja1">
+              <h3 id="ubicacion"></h3>
+              <img id="icono-animado" src="" alt="">
+            </div>
+            <div id="caja2">
+              <h3 id="temperatura-valor"></h3>
+              <h5 id="temperatura-descripcion"></h5>
+            </div>
           </div>
         </div>
       </div>      
@@ -165,6 +169,8 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
     <script src="js/script.js"></script>
+    
   </body>
 </html>

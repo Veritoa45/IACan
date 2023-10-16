@@ -1,33 +1,53 @@
-let lon;
-let lat;
-let temperature = document.querySelector(".temp")
-let summary = document.querySelector(".summary")
-let loc = document.querySelector(".location")
-let icon = document.querySelector(".icon")
-const kelvin = 273.15;
+window.addEventListener('load', () => {
+    let lon
+    let lat
+    let temperaturaValor = document.getElementById('temperatura-valor')
+    let temperaturaDescripcion = document.getElementById('temperatura-descripcion')
+    let ubicacion = document.getElementById('ubicacion')
+    let iconoAnimado = document.getElementById('icono-animado')
 
-window.addEventListener("load",() => {
     if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition((position) => {
-            lon = position.coords.longitude;
-            lat = position.coords.longitude;
-            const appid = "e96eb0e778e257d89231bddc0716d584";
-            const url_base = 'https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=e96eb0e778e257d89231bddc0716d584';
+        navigator.geolocation.getCurrentPosition (posicion => {
+            lon = posicion.coords.longitude
+            lat = posicion.coords.latitude
+
+            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=es&units=metric&appid=e96eb0e778e257d89231bddc0716d584`
             
-            fetch(url_base)
-            .then((response) => {
-                return response.json();
-            })
+            fetch(url)
+               .then( response => { return response.json() })
+               .then( data => {
+                let temp = Math.round(data.main.temp)
+                    temperaturaValor.textContent = `${temp} °C`
+                let desc = data.weather[0].description
+                    temperaturaDescripcion.textContent = desc.toUpperCase()
+                ubicacion.textContent = data.name
+                switch(data.weather[0].main) {
+                    case 'Thunderstore':
+                        iconoAnimado.src='../img/clima/thunder.svg'
+                        break;    
+                    case 'Drizzle':
+                        iconoAnimado.src='../img/clima/rainy-2.svg'
+                        break;
+                    case 'Rain':
+                        iconoAnimado.src='../img/clima/rainy-7.svg'
+                        break;    
+                    case 'Snow':
+                        iconoAnimado.src='../img/clima/snowy-6.svg'
+                    case 'Clear':
+                        iconoAnimado.src = '../img/clima/day.svg'
+                        break;
+                    case 'Atmosphere':
+                        iconoAnimado.src = '../img/clima/weather.svg'
+                        break;
+                    case 'Clouds':
+                        iconoAnimado.src = '../img/clima/cloudy-day-1.svg'
+                        break;
+                   }
 
-            .then((data) => {
-                console.log("Esta es la data")
-                console.log(data);
-            temperature.textContent = 
-                Math.floor(data.main.temp - kelvin) + "°C";
-
-            summary.textContent = data.weather[0].description;
-            loc.textContent = data.name + ", " + data.sys.country;    
-            });
-        });
-    };
-});
+               })    
+               .catch(error => {
+                console.log(error)
+               })       
+        })
+    }
+})

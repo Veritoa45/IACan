@@ -38,7 +38,7 @@ h1 {
 #inicio {
     height: 30px;
     float: right;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 5px;
 }
 
@@ -53,7 +53,9 @@ nav ul {
     padding: 0;
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(254, 176, 176);
     color: #000;
 }
@@ -176,14 +178,14 @@ iframe {
     margin-top: 20px;
 }
 
-.aside .clima {
+.aside #clima {
     background-color: rgb(255, 236, 236);
     border-radius: 6px;  
 	box-shadow: inset 5px 5px 5px rgb(255, 225, 225), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
 	text-shadow: 1px 1px 1px rgba(255,255,255,.9);
     width: 280px;
-    height: 300px;
-    margin: 60px auto;
+    height: 350px;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,15 +194,17 @@ iframe {
 .icon {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 .icon img {
     margin-right: 20px;
 }
 
-.text, .temp, .summary, .location {
-    margin: 10px auto;
+#caja1, #caja2 h3, h5{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 footer {
@@ -685,6 +689,7 @@ input#usuario_login, input#contraseña_login {
 
 /*----------------------------------*/
 /*Responsive Tablet*/
+
 @media screen and (min-width: 640px) and (max-width: 1280px) {
     /*Index*/
     header {
@@ -790,10 +795,96 @@ input#usuario_login, input#contraseña_login {
 
 
 
+/*Responsive Celular*/
 
-/*@media screen and (max-width: 640px) {
-    .menu {
-    background: blue;
+@media screen and (max-width: 640px) {
+    /*Index*/
+    header {
+        height: 130px;
     }
-    }*/
     
+    .contenedor {
+        height: 140px;
+    }
+
+    .logo-style {
+        height: 50px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+        
+    #inicio {
+        height: 15px;
+        float: right;
+        margin-top: 20px;
+        padding: 5px;
+    }
+  
+    main { 
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .info{
+        width: 50%;
+        font-size: 14px;
+    }
+    
+    .aside{
+        width: 50%;
+    }
+    
+    .calendario {
+        margin-right: 5px;
+    }
+    
+    iframe {
+        width: 90%;
+    }
+    
+    footer {
+        margin: 0px;
+        font-size: 14px;
+        height: 115px;
+    }
+    
+    .datos {
+        margin-left: 20px;
+        
+    }
+
+    .links {
+        margin-left: 20px;
+    }
+    
+    .red {
+        margin-right: 0;
+    }
+    
+    /*Adiestradores*/
+
+    #adiestradores {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: auto 5%;
+    }
+    
+    .biselado .encabezado {
+        height: 110px;
+    }
+       
+    .orden {
+        display: grid;
+        grid-template-columns: 280px 280px;
+        grid-template-rows: 60px 60px;    
+        column-gap: 20px;
+    }
+
+    .orden .barrios {
+        width: 90%;
+    }
+}
