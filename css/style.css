@@ -26,6 +26,12 @@ header {
     align-items: center; 
 }
 
+.contenedor .responsive {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+}
+
 .logo-style {
     height: 90px;
 }
@@ -102,7 +108,7 @@ h2 {
 .slider2 ul {
 	display: flex;
 	padding: 0;
-	width: 800%;
+	width: 400%;
 	animation: cambio 20s infinite alternate linear;
 }
 
@@ -245,6 +251,7 @@ footer {
     background-color:rgb(215, 189, 226);
     color: #000;
     padding: 6px;
+    font-weight: bold;
 }
 
 .red {
@@ -417,6 +424,7 @@ h2 {
 .biselado .encabezado {
     height: 90px;
 }
+
 .biselado h3 {
     text-align: left;
 }
@@ -698,6 +706,11 @@ input#usuario_login, input#contraseña_login {
     
     .contenedor {
         height: 100px;
+        flex-flow: row nowrap;
+    }
+
+    .contenedor .responsive {
+        gap: 20px;
     }
     
     .logo-style {
@@ -739,8 +752,13 @@ input#usuario_login, input#contraseña_login {
     
     iframe {
         width: 90%;
+        height: 300px;
     }
     
+    #clima {
+        height: 100px;
+    }
+
     footer {
         margin: 0px;
         font-size: 14px;
@@ -800,59 +818,82 @@ input#usuario_login, input#contraseña_login {
 @media screen and (max-width: 640px) {
     /*Index*/
     header {
-        height: 130px;
+        height: 250px;
     }
     
     .contenedor {
-        height: 140px;
+        height: 150px;
+    }
+    
+    .contenedor .responsive {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 
     .logo-style {
-        height: 50px;
+        height: 60px;
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 22px;
     }
         
     #inicio {
-        height: 15px;
+        height: 18px;
         float: right;
-        margin-top: 20px;
-        padding: 5px;
+        margin-top: 0;
     }
   
-    main { 
-        width: 100%;
-        margin: 20px auto;
+    nav ul a {
+        align-items: start;
     }
 
-    .info{
-        width: 50%;
+    main { 
+        width: 100%;
+        margin: auto;
+    }
+
+    .centro {
+        flex-direction: column;
+    }
+
+    .info {
+        width: 90%;
         font-size: 14px;
+        margin: auto;
     }
     
-    .aside{
-        width: 50%;
+    .aside {
+        width: 90%;
+        margin: auto;
     }
-    
-    .calendario {
-        margin-right: 5px;
-    }
-    
+
     iframe {
         width: 90%;
+        height: auto;
     }
-    
+
+    .aside #clima {
+        height: 310px;
+    }
+
+    #clima h2{
+        font-size: 18px;
+    }
+
+    #clima h3 {
+        font-size: 16px;
+    }
+       
     footer {
-        margin: 0px;
-        font-size: 14px;
+        font-size: 12px;
         height: 115px;
     }
     
     .datos {
         margin-left: 20px;
-        
+    
     }
 
     .links {
@@ -861,6 +902,12 @@ input#usuario_login, input#contraseña_login {
     
     .red {
         margin-right: 0;
+    }
+
+    .red img{
+        width: 15px;
+        flex-wrap: nowrap;
+        margin: 5px;
     }
     
     /*Adiestradores*/
@@ -876,15 +923,33 @@ input#usuario_login, input#contraseña_login {
     .biselado .encabezado {
         height: 110px;
     }
+
+    .biselado p {
+        font-size: 14px;
+    }
        
     .orden {
-        display: grid;
-        grid-template-columns: 280px 280px;
-        grid-template-rows: 60px 60px;    
-        column-gap: 20px;
+        display: flex;
+        flex-direction: column;
     }
 
-    .orden .barrios {
-        width: 90%;
+    .huellas {
+        font-size: 14px;
+    }
+
+    .orden .puntaje img {
+        width: 20px;
+    }
+
+    .btn-abrir-modal1, .btn-abrir-modal2, .btn-abrir-modal3, .btn-abrir-modal4, .btn-abrir-modal5, .btn-abrir-modal6, .btn-abrir-modal7, .btn-abrir-modal8, .btn-abrir-modal9, .btn-abrir-modal10, .btn-abrir-modal11, .btn-abrir-modal12, .btn-abrir-modal13, .btn-abrir-modal14,.btn-abrir-modal15,.btn-abrir-modal16,.btn-abrir-modal17,.btn-abrir-modal18,.btn-abrir-modal19,.btn-abrir-modal20,.btn-abrir-modal21,.btn-abrir-modal22,.btn-abrir-modal23,.btn-abrir-modal24,.btn-abrir-modal25,.btn-abrir-modal26,.btn-abrir-modal27,.btn-abrir-modal28,.btn-abrir-modal29,.btn-abrir-modal30 {
+        width: 120px;
+        height: 30px;
+        margin: 10px 50%;
+    }
+
+    .registro {
+        font-size: 20px;
+        width: 200px;
+        height: 100px;
     }
 }
