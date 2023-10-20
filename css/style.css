@@ -603,7 +603,7 @@ legend {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 700px;
+    width: 600px;
     margin: 0 auto;
     padding: 15px;
     text-align: center;
@@ -802,6 +802,7 @@ input#usuario_login, input#contraseña_login {
     .orden .barrios {
         width: 90%;
     }
+
 }
     
 
@@ -952,4 +953,19 @@ input#usuario_login, input#contraseña_login {
         width: 200px;
         height: 100px;
     }
+
+/*Form Alumno*/
+
+.alumnos_adiest{
+    width: auto;
+}
+
+/*Form Adiestradores*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    gap: 10px;
+}
 }
