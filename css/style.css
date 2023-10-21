@@ -657,23 +657,35 @@ input#ciudad_a {
 }
 
 .grid-container2 {
-    display:grid;
-    grid-template-columns: 400px 400px ;
-    column-gap: 200px;
+    /*display:grid;*/
+    display: flex;
+    column-gap: 20px;
+    grid-template-columns: 300px 300px ;
+    /*
     width: 1280px;
     margin-bottom: 150px;
-    height: 341px;
+    height: 341px;*/
 }
 
+.grid-item2 /*.biselado*/{
+    display: flex;
+    height: 300px;
+    width: auto/*400px*/;
+    margin: 5% auto;
+    /*margin-left: 30%;
+    margin-top: 10%;*/
+}
+
+/*.cuadricula {
+    display:flex;
+    flex-direction: column;
+    height: 300px;
+    margin: 0 auto;
+}*/
 .grid-item2 .biselado{
-    height: 300px;
-    width: 400px;
-    margin-left: 30%;
-    margin-top: 10%;
-}
-
-.cuadricula {
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
 }
 
 input#usuario_login, input#contraseña_login {
@@ -681,19 +693,23 @@ input#usuario_login, input#contraseña_login {
 }
 
 .registro_alumno, .registro_adiestrador {
-    text-align: center;
-    margin-top: 15px;
+    display: flex;
+    width: auto;
+    /*text-align: center;
+    margin-top: 15px;*/
 }
 
-.dato_login {
-    text-align: center;
-    margin-top: 20px;
+.dato_login{
+    /*text-align: center;*/
+    margin-top: 10px;
     height: 30px;
+    width: auto;
 }
 
 .boton_ingreso {
-    text-align: center;
+    /*text-align: center;*/
     margin-top: 25px;
+    width: auto;
 }
 
 /*----------------------------------*/
@@ -802,6 +818,17 @@ input#usuario_login, input#contraseña_login {
 
     .orden .barrios {
         width: 90%;
+    }
+/*Log-in*/
+
+    .grid-container2 {
+        width: auto;
+        /*flex-direction: column;*/
+        column-gap: auto;
+    }
+
+    .dato_login{
+        display: flex;
     }
 
 }
@@ -979,7 +1006,12 @@ input#usuario_login, input#contraseña_login {
     padding: 15px;
     text-align: center;
         }
-.linea,.dato_u,.dato2{{
+.linea,.dato_u,.dato2{
     flex-direction: column;
 }
+/*Log-in*/
+.grid-container2 {
+    flex-direction: column;
+}
+
 }
