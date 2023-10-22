@@ -16,7 +16,9 @@
             </div>  
             <a href="form-login.html"><img src="../img/inicio.png" alt="inicio" id="inicio"/></a>
         </div>
-        <nav>
+        <button id="abrir" class="abrir-menu"><img src="../img/menu.png" alt=""></button>
+        <nav class="nav" id="nav"> 
+            <button id="cerrar" class="cerrar-menu"><img src="../img/cerrar.png" alt=""></button>
             <ul>
                 <li><a href="../index.html" target="_self">Inicio</a></li>
                 <li><a href="inscripciones.html" target="_self">Inscribite</a></li>
@@ -27,265 +29,258 @@
     </header>
     <main>
         <form class="alumnos_adiest">
-    <h2>Formulario de registro de adiestradores</h2>
-    
-<fieldset class="recuadro">
-    <legend>Datos personales</legend>
-   
-    <div class="dato2">
-        <label for="nombre_a">Nombre:</label>
-        <input size="20" type="text" id="nombre_a" name="nombre_a" placeholder="Ingrese su nombre aquí" required/>
-    </div> 
-    <br>
-    <div class="dato2">
-        <label for="apellido_a">Apellido:</label>
-        <input size="20" type="text" id="apellido_a" name="apellido_a" placeholder="Ingrese su apellido aquí" required/>
-    </div> 
-    <br>
-    <div class="dato2">
-        <label for="birthday_a">Fecha de Nacimiento:</label>
-        <input type="date" name="birthday_a" required>
-    </div> 
-    <br>
-    <div class="dato2">
-        <label for="genero_a">Género:</label>
-        <input type="radio" name="genero_a" id="genero_a" value="Masculino" required> Masculino
-        <input type="radio" name="genero_a" id="genero_a" value="Femenino"> Femenino
-        <input type="radio" name="genero_a" id="genero_a" value="Otro"> Otro
-    </div> 
-    <br>
-    <div class="dato2">
-        <label for="direccion_a">Dirección:</label>
-        <input type="text" id="direccion_a" name="direccion_a" placeholder="Ingrese su direccion aquí" required/>
-    </div>  
-    <br>
-    <div class="dato2">
-        <label for="ciudad_a">Barrios donde presta servicio (elija como máximo 5):</label>
-        <br>
-        <div class="grid-container">      
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=1 />Agronomía 
-            </div>    
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=2 />Almagro
+            <h2>Formulario de registro de adiestradores</h2>
+            <fieldset class="recuadro">
+                <legend>Datos personales</legend>
+                <div class="dato2">
+                    <label for="nombre_a">Nombre:</label>
+                    <input size="20" type="text" id="nombre_a" name="nombre_a" placeholder="Ingrese su nombre aquí" required/>
+                </div> 
+                <br>
+                <div class="dato2">
+                    <label for="apellido_a">Apellido:</label>
+                    <input size="20" type="text" id="apellido_a" name="apellido_a" placeholder="Ingrese su apellido aquí" required/>
+                </div> 
+                <br>
+                <div class="dato2">
+                    <label for="birthday_a">Fecha de Nacimiento:</label>
+                    <input type="date" name="birthday_a" required>
+                </div> 
+                <br>
+                <div class="dato2">
+                    <label for="genero_a">Género:</label>
+                    <input type="radio" name="genero_a" id="genero_a" value="Masculino" required> Masculino
+                    <input type="radio" name="genero_a" id="genero_a" value="Femenino"> Femenino
+                    <input type="radio" name="genero_a" id="genero_a" value="Otro"> Otro
+                </div> 
+                <br>
+                <div class="dato2">
+                    <label for="direccion_a">Dirección:</label>
+                    <input type="text" id="direccion_a" name="direccion_a" placeholder="Ingrese su direccion aquí" required/>
+                </div>  
+                <br>
+                <div class="dato2">
+                    <label for="ciudad_a">Barrios donde presta servicio (elija como máximo 5):</label>
+                    <br>
+                    <div class="grid-container">      
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=1 />Agronomía 
+                        </div>    
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=2 />Almagro
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=3 />Balvanera
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=4 />Barracas
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=5 />Belgrano
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=6 />Boedo
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=7 />Caballito
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=8 />Chacarita
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=9 />Coghlan
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=10 />Colegiales
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=11 />Constitución
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=12 />Flores
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=13 />Floresta
+                        </div> 
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=14 />La Boca
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=15 />La Paternal
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=16 />Liniers
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=17 />Mataderos
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=18 />Monte Castro
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=18 />Monserrat
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=19 />Nueva Pompeya
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=20 />Núñez
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=21 />Palermo
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=22 />Parque Avellaneda
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=23 />Parque Chacabuco
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=24 />Parque Chas
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=25 />Parque Patricios
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=26 />Puerto Madero
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=27 />Recoleta
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=28 />Retiro
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=29 />Saavedra
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=30 />San Cristóbal
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=31 />San Nicolás
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=32 />San Telmo
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=33 />Vélez Sársfield
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=34 />Versalles
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=35 />Villa Crespo
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=36 />Villa del Parque
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=37 />Villa Devoto
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=38 />Villa General Mitre
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=39 />Villa Lugano
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=40 />Villa Luro
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=41 />Villa Ortúzar
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=42 />Villa Pueyrredón
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=43 />Villa Real
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=44 />Villa Riachuelo
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=45 />Villa Santa Rita
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=46 />Villa Soldati
+                        </div>
+                        <div class="grid-item">
+                            <input type="checkbox" id="ciudad_a" name="ciudad_a" value=47 />Villa Urquiza
+                        </div>
+                    </div>  
+                </div>
+                <br>
+                <div class="dato2">
+                    <label for="mail_a">Correo electrónico:</label>
+                    <input size="70" type="email" id="mail_a" name="mail_a" placeholder="Ingrese su correo electrónico aquí 'ejemplo@mail.com'" required/>
+                </div>     
+                <br>
+                <div class="dato2">
+                    <label for="telefono_a">Teléfono:</label>
+                    <input type="tel" id="telefono_a" name="telefono_a" placeholder="Ingrese su telefono aquí" required/>
+                </div> 
+                <br>
+                <div class="dato2">
+                    <label for="especialidad_a">Especialidad:</label>
+                    <select name="especialidad_a" id="especialidad_a">
+                        <option value="Seguridad y Combate">Seguridad y Combate</option>
+                        <option value="Detector de Drogas y Estupefacientes">Detector de Drogas y Estupefacientes</option>
+                        <option value="Detector de Explosivos">Detector de Explosivos</option>
+                        <option value="Intervencion en zona de operaciones militares">Intervencion en zona de operaciones militares</option>
+                        <option value="Perros de terapia">Perros de terapia</option>
+                        <option value="Búsqueda y Rescate">Busqueda y Rescate</option>
+                        <option value="Razas peligrosas">Razas peligrosas</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                    <br>
+                    <p>En caso de elegir otra, especifique aquí:
+                    <input size="40" ="text" id="otraesp_a" name="otraesp_a" placeholder="Ingrese su especialidad aquí" required/>
+                    </p>
+                </div>
+            </fieldset>
+            <fieldset class="recuadro">
+                <legend>Cree su cuenta</legend>
+                <div class="dato2">
+                    <label for="usuario_a">Usuario:</label>
+                    <input size="30" type="text" id="usuario_a" name="usuario_a" placeholder="Ingrese un usuario" required/>
+                    <br>
+                    <br>
+                    <label for="contraseña_a">Contraseña:</label>
+                    <input size="30" type="password" id="contraseña_a" name="contraseña_a" placeholder="Ingrese una contraseña aquí" required/>
+                    <br>
+                    <br>
+                    <label for="contraseña2_a">Repita su contraseña:</label>
+                    <input size="30" type="password" id="contraseña2_a" name="contraseña2_a" placeholder="Confirme su contraseña aquí" required/>
+                    <br>
+                </div> 
+                <br>
+                <div class="enviar">
+                    <input type="submit" value="Enviar" class="button">
+                    <input type="reset" value="Limpiar" class="button">
+                </div>
+            </form>
+        </main>
+    <footer>
+        <div class="datos">
+            <h3>Contactanos</h3>
+            <p>Lavalle 1334 - CABA</p>
+            <p><i>consultas@iacan.com</i></p>
+        </div>
+        <div class="links">
+            <a href="../archivos/Plan de Estudios.pdf" download>Plan de Estudios</a>
+            <a href="adiestradores.html">Adiestradores</a>
+            <a href="contacto.html" target="_blank">Contacto</a>
+        </div>
+        <div class="red">
+            <h4>Nuestras Redes Sociales</h4>
+            <div>
+                <a href="#"><img src="../img/whatsapp.png" alt="whatsapp"></a>
+                <a href="#"><img src="../img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="../img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="../img/twitter.png" alt="twitter"></a>
             </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=3 />Balvanera
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=4 />Barracas
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=5 />Belgrano
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=6 />Boedo
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=7 />Caballito
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=8 />Chacarita
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=9 />Coghlan
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=10 />Colegiales
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=11 />Constitución
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=12 />Flores
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=13 />Floresta
-            </div> 
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=14 />La Boca
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=15 />La Paternal
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=16 />Liniers
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=17 />Mataderos
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=18 />Monte Castro
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=18 />Monserrat
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=19 />Nueva Pompeya
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=20 />Núñez
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=21 />Palermo
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=22 />Parque Avellaneda
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=23 />Parque Chacabuco
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=24 />Parque Chas
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=25 />Parque Patricios
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=26 />Puerto Madero
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=27 />Recoleta
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=28 />Retiro
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=29 />Saavedra
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=30 />San Cristóbal
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=31 />San Nicolás
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=32 />San Telmo
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=33 />Vélez Sársfield
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=34 />Versalles
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=35 />Villa Crespo
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=36 />Villa del Parque
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=37 />Villa Devoto
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=38 />Villa General Mitre
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=39 />Villa Lugano
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=40 />Villa Luro
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=41 />Villa Ortúzar
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=42 />Villa Pueyrredón
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=43 />Villa Real
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=44 />Villa Riachuelo
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=45 />Villa Santa Rita
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=46 />Villa Soldati
-            </div>
-            <div class="grid-item">
-                <input type="checkbox" id="ciudad_a" name="ciudad_a" value=47 />Villa Urquiza
-            </div>
-        
-    </div>  
-
-</div>
-    <br>
-    <div class="dato2">
-        <label for="mail_a">Correo electrónico:</label>
-        <input size="70" type="email" id="mail_a" name="mail_a" placeholder="Ingrese su correo electrónico aquí 'ejemplo@mail.com'" required/>
-    </div>     
-    <br>
-    <div class="dato2">
-        <label for="telefono_a">Teléfono:</label>
-        <input type="tel" id="telefono_a" name="telefono_a" placeholder="Ingrese su telefono aquí" required/>
-    </div> 
-    <br>
-
-    <div class="dato2">
-        <label for="especialidad_a">Especialidad:</label>
-        <select name="especialidad_a" id="especialidad_a">
-        <option value="Seguridad y Combate">Seguridad y Combate</option>
-        <option value="Detector de Drogas y Estupefacientes">Detector de Drogas y Estupefacientes</option>
-        <option value="Detector de Explosivos">Detector de Explosivos</option>
-        <option value="Intervencion en zona de operaciones militares">Intervencion en zona de operaciones militares</option>
-        <option value="Perros de terapia">Perros de terapia</option>
-        <option value="Búsqueda y Rescate">Busqueda y Rescate</option>
-        <option value="Razas peligrosas">Razas peligrosas</option>
-        <option value="Otra">Otra</option>
-    </select>
-        <br>
-        <p>En caso de elegir otra, especifique aquí:
-        <input size="40" ="text" id="otraesp_a" name="otraesp_a" placeholder="Ingrese su especialidad aquí" required/>
-    </p>
-    </div>
-</fieldset>
-
-<fieldset class="recuadro">
-    <legend>Cree su cuenta</legend>
-    <div class="dato2">
-        <label for="usuario_a">Usuario:</label>
-        <input size="30" type="text" id="usuario_a" name="usuario_a" placeholder="Ingrese un usuario" required/>
-<br>
-<br>
-        <label for="contraseña_a">Contraseña:</label>
-        <input size="30" type="password" id="contraseña_a" name="contraseña_a" placeholder="Ingrese una contraseña aquí" required/>
-<br>
-<br>
-        <label for="contraseña2_a">Repita su contraseña:</label>
-        <input size="30" type="password" id="contraseña2_a" name="contraseña2_a" placeholder="Confirme su contraseña aquí" required/>
-<br>
-
-    </div> 
-
-<br>
-<div class="enviar">
-    <input type="submit" value="Enviar" class="button">
-    <input type="reset" value="Limpiar" class="button">
-</div>
-    </form>
-</main>
-<footer>
-    <div class="datos">
-        <h3>Contactanos</h3>
-        <p>Lavalle 1334 - CABA</p>
-        <p><i>consultas@iacan.com</i></p>
-    </div>
-    <div class="links">
-      <a href="../archivos/Plan de Estudios.pdf" download>Plan de Estudios</a>
-      <a href="adiestradores.html">Adiestradores</a>
-      <a href="contacto.html" target="_blank">Contacto</a>
-    </div>
-    <div class="red">
-      <h4>Nuestras Redes Sociales</h4>
-      <div>
-      <a href="#"><img src="../img/whatsapp.png" alt="whatsapp"></a>
-      <a href="#"><img src="../img/facebook.png" alt="facebook"></a>
-      <a href="#"><img src="../img/instagram.png" alt="instagram"></a>
-      <a href="#"><img src="../img/twitter.png" alt="twitter"></a>
-      </div>
-    </div>
-  </footer>
+        </div>
+    </footer>
+    <script src="../js/menuresponsive.js"></script>
   </body>
 </html>

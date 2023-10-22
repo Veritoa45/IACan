@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="../img/ico/IACan-Favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
   </head>
-
   <body>
     <header>
       <div class="contenedor">
@@ -17,7 +16,9 @@
         </div>  
         <a href="form-login.html"><img src="../img/inicio.png" alt="inicio" id="inicio"/></a>
       </div>
-      <nav>
+      <button id="abrir" class="abrir-menu"><img src="../img/menu.png" alt=""></button>
+      <nav class="nav" id="nav"> 
+        <button id="cerrar" class="cerrar-menu"><img src="../img/cerrar.png" alt=""></button>
         <ul>
           <li><a href="../index.html" target="_self">Inicio</a></li>
           <li><a href="inscripciones.html" target="_self">Inscribite</a></li>
@@ -27,66 +28,59 @@
       </nav>
     </header>
     <main>
-        <div class="grid-container2">
-          <div class="grid-item2">
-      <fieldset class="biselado">
-    <legend>Iniciar sesion</legend>
-    
-    <div class="dato_login">
-        <label for="usuario_login">Usuario:</label>
-        <input size="20" type="text" id="usuario_login" name="usuario_login" placeholder="Ingrese su usuario aquí"/>
-    </div> 
-    <br>
-    <div class="dato_login">
-        <label for="contraseña_login">Contraseña:</label>
-        <input size="30" type="password" id="contraseña_login" name="contraseña_login" placeholder="Ingrese una contraseña aquí"/>
-    </div> 
-
-    <div class="boton_ingreso">
-        <button type="submit" value="Ingresar" class="ingresar2">Ingresar</button>
+      <div class="grid-container2">
+        <div class="grid-item2">
+          <fieldset class="biselado">
+            <legend>Iniciar sesion</legend>
+            <div class="dato_login">
+              <label for="usuario_login">Usuario:</label>
+              <input size="20" type="text" id="usuario_login" name="usuario_login" placeholder="Ingrese su usuario aquí"/>
+            </div> 
+            <br>
+            <div class="dato_login">
+              <label for="contraseña_login">Contraseña:</label>
+              <input size="30" type="password" id="contraseña_login" name="contraseña_login" placeholder="Ingrese una contraseña aquí"/>
+            </div> 
+            <div class="boton_ingreso">
+              <button type="submit" value="Ingresar" class="ingresar2">Ingresar</button>
+            </div>
+          </fieldset>
+        </div>
+        <div class="grid-item2">
+          <fieldset class="biselado">
+            <legend>¡Registrate aqui!</legend>
+            <div class="registro_alumno">
+              <a href="form-alumno.html"><button class="ingresar2">Alumno</button></a>
+            </div>
+            <br>
+            <div class="registro_adiestrador">
+              <a href="form-adiestrador.html"><button class="ingresar2">Adiestrador</button></a>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </main>
+  <footer>
+    <div class="datos">
+      <h3>Contactanos</h3>
+      <p>Lavalle 1334 - CABA</p>
+      <p><i>consultas@iacan.com</i></p>
     </div>
- 
-</fieldset>
-</div>
-
-<div class="grid-item2">
-<fieldset class="biselado">
-  <legend>¡Registrate aqui!</legend>
-  
-  <div class="registro_alumno">
-    <a href="form-alumno.html"><button class="ingresar2">Alumno</button></a>
-</div>
-  
-  <br>
-  <div class="registro_adiestrador">
-    <a href="form-adiestrador.html"><button class="ingresar2">Adiestrador</button></a>
-  </div>
-</div>
-</fieldset>
-</div>
-
-
-</main>
-<footer>
-  <div class="datos">
-    <h3>Contactanos</h3>
-    <p>Lavalle 1334 - CABA</p>
-    <p><i>consultas@iacan.com</i></p>
-  </div>
-  <div class="links">
-    <a href="../archivos/Plan de Estudios.pdf" download>Plan de Estudios</a>
-    <a href="adiestradores.html">Adiestradores</a>
-    <a href="contacto.html" target="_blank">Contacto</a>
-  </div>
-  <div class="red">
-    <h4>Nuestras Redes Sociales</h4>
-    <div>
-      <a href="#"><img src="../img/whatsapp.png" alt="whatsapp"></a>
-      <a href="#"><img src="../img/facebook.png" alt="facebook"></a>
-      <a href="#"><img src="../img/instagram.png" alt="instagram"></a>
-      <a href="#"><img src="../img/twitter.png" alt="twitter"></a>
+    <div class="links">
+      <a href="../archivos/Plan de Estudios.pdf" download>Plan de Estudios</a>
+      <a href="adiestradores.html">Adiestradores</a>
+      <a href="contacto.html" target="_blank">Contacto</a>
     </div>
-  </div>
-</footer>
-  </body>
+    <div class="red">
+      <h4>Nuestras Redes Sociales</h4>
+      <div>
+        <a href="#"><img src="../img/whatsapp.png" alt="whatsapp"></a>
+        <a href="#"><img src="../img/facebook.png" alt="facebook"></a>
+        <a href="#"><img src="../img/instagram.png" alt="instagram"></a>
+        <a href="#"><img src="../img/twitter.png" alt="twitter"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/menuresponsive.js"></script>
+ </body>
 </html>
