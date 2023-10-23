@@ -11,10 +11,8 @@
   <body>
     <header>
       <div class="contenedor">
-        <div class="responsive">
-          <img src="../img/IACan Logo.png" alt="Logo" class="logo-style" />
-          <h1>Instituto de Adiestramiento Canino</h1>
-        </div>  
+        <img src="../img/IACan Logo.png" alt="Logo" class="logo-style" />
+        <h1>Instituto de Adiestramiento Canino</h1>
         <a href="form-login.html"><img src="../img/inicio.png" alt="inicio" id="inicio"/></a>
       </div>
       <button id="abrir" class="abrir-menu"><img src="../img/menu.png" alt=""></button>
@@ -228,7 +226,18 @@
         pagination: {
         el: ".swiper-pagination",
         clickable: true,
-      },
+        },
+        breakpoints: {
+          1280: {
+            slidesPerView: 3,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          320: {
+            slidesPerView: 1,
+          }
+        },
       });
     </script>
   </body>

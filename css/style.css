@@ -25,12 +25,6 @@ header {
     align-items: center; 
 }
 
-.contenedor .responsive {
-    display: flex;
-    align-items: center;
-    gap: 180px;
-}
-
 .logo-style {
     height: 90px;
 }
@@ -753,16 +747,12 @@ input#usuario_login, input#contraseña_login {
         flex-flow: row nowrap;
     }
 
-    .contenedor .responsive {
-        gap: 20px;
-    }
-    
     .logo-style {
         height: 70px;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
         
     #inicio {
@@ -819,6 +809,44 @@ input#usuario_login, input#contraseña_login {
     
     .red {
         margin-right: 0;
+    }
+
+    /*Inscribite*/
+
+    .texto {
+        margin: auto 10%;
+    }
+
+    .video {
+        width: 90%;
+        margin: auto;
+    }
+
+    .video video{
+        width: 100%;
+    }
+
+    .box {
+        width: 95%;
+    }
+
+    .grupo .boton {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .grupo .boton a{
+        text-align: center;
+    }
+
+    .swiper {
+        width: 90%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .swiper .swiper-slide {
+        height: auto;
     }
     
     /*Adiestradores*/
@@ -901,12 +929,6 @@ input#usuario_login, input#contraseña_login {
         flex-direction: column;
     }
     
-    .contenedor .responsive {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
     .abrir-menu, .cerrar-menu {
         display: block;
         border: 0;
@@ -1059,6 +1081,44 @@ input#usuario_login, input#contraseña_login {
         margin: 5px;
     }
     
+    /*Inscribite*/
+
+    .texto {
+        margin: auto 10%;
+    }
+
+    .video {
+        width: 90%;
+        margin: auto;
+    }
+
+    .video video{
+        width: 100%;
+    }
+
+    .box {
+        width: 95%;
+    }
+
+    .grupo .boton {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .grupo .boton a{
+        text-align: center;
+    }
+
+    .swiper {
+        width: 90%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .swiper .swiper-slide {
+        height: auto;
+    }
+
     /*Adiestradores*/
 
     #adiestradores {
