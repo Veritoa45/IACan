@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
             mostrarError("El mensaje es muy corto")
             return;
         } else {
+            formulario_cont.reset()
             document.getElementById("mensajeExito").style.display = "block";
             mostrarExito("Gracias! Su formulario fue enviado con éxito")
         }

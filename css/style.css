@@ -686,13 +686,6 @@ input#ciudad_a {
     margin-top: 10%;*/
 }
 
-/*.cuadricula {
-    display:flex;
-    flex-direction: column;
-    height: 300px;
-    margin: 0 auto;
-}*/
-
 .grid-item2 .biselado{
     display: flex;
     flex-direction: column;
@@ -746,7 +739,7 @@ input#usuario_login, input#contraseña_login {
     padding: 10px;
 }
 
-/*----------------------------------*/
+/*-------------------------------------------------------------------------*/
 /*Responsive Tablet*/
 
 @media screen and (min-width: 640px) and (max-width: 1280px) {
@@ -856,19 +849,45 @@ input#usuario_login, input#contraseña_login {
     /*Log-in*/
 
     .grid-container2 {
-        width: auto;
-        /*flex-direction: column;*/
-        column-gap: auto;
+        width: 95%;
+        margin: auto;
+    }
+
+    .grid-item2 {
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-item2 .biselado{
+        width: 40%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 5px;
+        margin: 0 5px;
     }
 
     .dato_login{
         display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dato_login input{
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .ingresar2 {
+        width: 150px;
+        height: 60px;
+        margin-top: 10px;
     }
 }
-    
 
-
-
+/*--------------------------------------------------------------*/
 /*Responsive Celular*/
 
 @media screen and (max-width: 640px) {
