@@ -67,6 +67,10 @@ formulario_adiestradores.addEventListener("submit", function(event) {
         mostrarExito("Gracias! Su formulario fue enviado con éxito");
         document.getElementById("mensajeError").style.display = "none";
         document.getElementById("mensajeExito").style.display = "block";
+        setTimeout(() => {
+            document.getElementById("mensajeError").remove("mensajeError");
+            document.getElementById("mensajeExito").remove("mensajeExito");
+        }, 10000);
     }
 });
 
