@@ -600,7 +600,7 @@ legend {
     font-weight: bold;
 }
 
-#alumnos_adiest{
+#alumnos_adiest, #form_adiest{
     display: flex;
     flex-direction: column;
     gap: 12px;

@@ -26,36 +26,31 @@
         </nav>
     </header>
     <main>
-        <form class="alumnos_adiest">
+        <form id="form_adiest">
             <h2>Formulario de registro de adiestradores</h2>
             <fieldset class="recuadro">
                 <legend>Datos personales</legend>
                 <div class="dato2">
                     <label for="nombre_a">Nombre:</label>
-                    <input size="20" type="text" id="nombre_a" name="nombre_a" placeholder="Ingrese su nombre aquí" required/>
+                    <input size="20" type="text" id="nombre_a" name="nombre_a" placeholder="Ingrese su nombre aquí"/>
                 </div> 
                 <br>
                 <div class="dato2">
                     <label for="apellido_a">Apellido:</label>
-                    <input size="20" type="text" id="apellido_a" name="apellido_a" placeholder="Ingrese su apellido aquí" required/>
+                    <input size="20" type="text" id="apellido_a" name="apellido_a" placeholder="Ingrese su apellido aquí"/>
                 </div> 
                 <br>
                 <div class="dato2">
-                    <label for="birthday_a">Fecha de Nacimiento:</label>
-                    <input type="date" name="birthday_a" required>
+                    <label for="age_a">Edad:</label>
+                    <input type="number" id="age_a" name="age_a" placeholder="Ingrese su edad"/>
                 </div> 
                 <br>
                 <div class="dato2">
                     <label for="genero_a">Género:</label>
-                    <input type="radio" name="genero_a" id="genero_a" value="Masculino" required> Masculino
+                    <input type="radio" name="genero_a" id="genero_a" value="Masculino"> Masculino
                     <input type="radio" name="genero_a" id="genero_a" value="Femenino"> Femenino
                     <input type="radio" name="genero_a" id="genero_a" value="Otro"> Otro
                 </div> 
-                <br>
-                <div class="dato2">
-                    <label for="direccion_a">Dirección:</label>
-                    <input type="text" id="direccion_a" name="direccion_a" placeholder="Ingrese su direccion aquí" required/>
-                </div>  
                 <br>
                 <div class="dato2">
                     <label for="ciudad_a">Barrios donde presta servicio (elija como máximo 5):</label>
@@ -210,50 +205,35 @@
                 <br>
                 <div class="dato2">
                     <label for="mail_a">Correo electrónico:</label>
-                    <input size="70" type="email" id="mail_a" name="mail_a" placeholder="Ingrese su correo electrónico aquí 'ejemplo@mail.com'" required/>
+                    <input size="70" type="email" id="mail_a" name="mail_a" placeholder="Ingrese su correo electrónico aquí 'ejemplo@mail.com'"/>
                 </div>     
                 <br>
                 <div class="dato2">
                     <label for="telefono_a">Teléfono:</label>
-                    <input type="tel" id="telefono_a" name="telefono_a" placeholder="Ingrese su telefono aquí" required/>
+                    <input type="tel" id="telefono_a" name="telefono_a" placeholder="Ingrese su telefono aquí"/>
                 </div> 
                 <br>
-                <div class="dato2">
-                    <label for="especialidad_a">Especialidad:</label>
-                    <select name="especialidad_a" id="especialidad_a">
-                        <option value="Seguridad y Combate">Seguridad y Combate</option>
-                        <option value="Detector de Drogas y Estupefacientes">Detector de Drogas y Estupefacientes</option>
-                        <option value="Detector de Explosivos">Detector de Explosivos</option>
-                        <option value="Intervencion en zona de operaciones militares">Intervencion en zona de operaciones militares</option>
-                        <option value="Perros de terapia">Perros de terapia</option>
-                        <option value="Búsqueda y Rescate">Busqueda y Rescate</option>
-                        <option value="Razas peligrosas">Razas peligrosas</option>
-                        <option value="Otra">Otra</option>
-                    </select>
-                    <br>
-                    <p>En caso de elegir otra, especifique aquí:
-                    <input size="40" ="text" id="otraesp_a" name="otraesp_a" placeholder="Ingrese su especialidad aquí" required/>
-                    </p>
-                </div>
             </fieldset>
+            <div id="mensajeError"></div>
+            <div id="mensajeExito"></div>
             <fieldset class="recuadro">
                 <legend>Cree su cuenta</legend>
                 <div class="dato2">
                     <label for="usuario_a">Usuario:</label>
-                    <input size="30" type="text" id="usuario_a" name="usuario_a" placeholder="Ingrese un usuario" required/>
+                    <input size="30" type="text" id="usuario_a" name="usuario_a" placeholder="Ingrese un usuario"/>
                     <br>
                     <br>
                     <label for="contraseña_a">Contraseña:</label>
-                    <input size="30" type="password" id="contraseña_a" name="contraseña_a" placeholder="Ingrese una contraseña aquí" required/>
+                    <input size="30" type="password" id="contraseña_a" name="contraseña_a" placeholder="Ingrese una contraseña aquí"/>
                     <br>
                     <br>
                     <label for="contraseña2_a">Repita su contraseña:</label>
-                    <input size="30" type="password" id="contraseña2_a" name="contraseña2_a" placeholder="Confirme su contraseña aquí" required/>
+                    <input size="30" type="password" id="contraseña2_a" name="contraseña2_a" placeholder="Confirme su contraseña aquí"/>
                     <br>
                 </div> 
                 <br>
                 <div class="enviar">
-                    <input type="submit" value="Enviar" class="button">
+                    <button type="submit" value="enviar" class="button">Enviar</button>
                     <input type="reset" value="Limpiar" class="button">
                 </div>
             </form>
@@ -279,6 +259,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/validacion_adiestradores.js"></script>
     <script src="../js/menuresponsive.js"></script>
   </body>
 </html>
