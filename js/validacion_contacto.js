@@ -37,8 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         } else {
             formulario_cont.reset()
+            mostrarExito("Gracias! Su formulario fue enviado con éxito");
+            document.getElementById("mensajeError").style.display = "none";
             document.getElementById("mensajeExito").style.display = "block";
-            mostrarExito("Gracias! Su formulario fue enviado con éxito")
         }
     });
 

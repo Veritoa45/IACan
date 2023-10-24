@@ -61,9 +61,10 @@ formulario_alumnos.addEventListener("submit", function(event) {
         mostrarError("Las contraseñas no coinciden")
         return;
     } else {
-        formulario_alumnos.reset()
+        formulario_alumnos.reset();
+        mostrarExito("Gracias! Su formulario fue enviado con éxito");
+        document.getElementById("mensajeError").style.display = "none";
         document.getElementById("mensajeExito").style.display = "block";
-        mostrarExito("Gracias! Su formulario fue enviado con éxito")
     }
 });
 
