@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const expresion = /^[A-Za-z]{4,16}$/;
     const mailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})$/;
     const phone = /^[0-9]{10}$/;
-    const texto = /^[ A-Za-z]{15,150}$/;
+    const texto = /^[ A-Za-z.]{15,500}$/;
         
     formulario_cont.addEventListener("submit", function(event) {
         event.preventDefault(); 
@@ -33,7 +33,13 @@ document.addEventListener("DOMContentLoaded", function() {
             mostrarError("El teléfono dado es incorrecto");
             return;
         } else if(!texto.test(msj)) {
-            mostrarError("El mensaje es muy corto")
+            mostrarError("No utilice caracteres especiales");
+            return;
+        } else if(msj.length < 5) {
+            mostrarError("El mensaje es muy corto");
+            return;
+        } else if(msj.length > 500) {
+            mostrarError("El mensaje es muy largo");
             return;
         } else {
             formulario_cont.reset()
