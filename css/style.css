@@ -1177,10 +1177,24 @@ input#usuario_login, input#contraseña_login {
 
     /*Form Adiestradores*/
 
+    #form_adiest{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 16px;
+    } 
+
+    #form_adiest label{
+        font-size: 14px;
+    }
+
+    #nombre_a, #apellido_a, #age_a, #mail_a, #telefono_a, #usuario_a, #contraseña_a, #contraseña2_a{
+        width: 200px;
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: auto auto;
-        padding: 40px;
+        padding: 30px;
         gap: 10px;
     }
 
