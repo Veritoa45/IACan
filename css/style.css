@@ -1,4 +1,7 @@
 /* Index */
+html{
+    height: 100%;
+}
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,6 +14,9 @@ body{
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 header {
@@ -217,6 +223,7 @@ footer {
     color: #000;
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
 }
 
 .datos {
